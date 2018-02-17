@@ -1,6 +1,7 @@
 package com.santiago.bertha;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.view.View;
 
 import android.os.Bundle;
@@ -30,6 +31,7 @@ public class devicetab extends android.support.v4.app.Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(), "Testing button 2", Toast.LENGTH_SHORT).show();
+                //startActivity(new Intent(devicetab.this, Pop.class));
             }
         });
         return view;
